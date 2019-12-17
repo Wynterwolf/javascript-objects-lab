@@ -3,7 +3,10 @@ var recipes = {
   pie: "cherry"
 };
 
-var updateObjectWithKeyAndValue = function (object, key, value) {
-  var newObj = Object.assign({}, updateObjectWithKeyAndValue);
-    return newObj;
-};
+const updateObjectWithKeyAndValue = (object, key, value) => 
+  Object.assign({}, object, { [key]: value });
+  
+const destructivelyUpdateObjectWithKeyAndValue = (object, key, value) =>
+  Object.assign();
+  
+const destructivelyDeleteFromObjectByKey = (object, key) => {};
